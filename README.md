@@ -13,7 +13,7 @@ The project uses code from [Vaadin-on-Kotlin](http://vaadinonkotlin.eu). The Kot
 only included as a run-time dependency - this project contains no Kotlin code and doesn't even
 run the Kotlin compiler.
 
-The [live demo](https://vaadin8-jpadataprovider.herokuapp.com/) of this app runs on Heroku.
+The [live demo](https://vaadin8-jpadataprovider-exampl.herokuapp.com/) of this app runs on Heroku.
 
 You can read more about the JPADataProvider in the [vok-framework-jpa module description](https://github.com/mvysny/vaadin-on-kotlin/tree/master/vok-framework-jpa).
 In short, JPADataProvider uses JPA+Hibernate to map SQL database to Java objects.
