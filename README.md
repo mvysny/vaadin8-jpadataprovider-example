@@ -20,8 +20,9 @@ In short, JPADataProvider uses JPA+Hibernate to map SQL database to Java objects
 
 There are way simpler options than JPA; please check out the following:
 
-* [vok-orm](https://github.com/mvysny/vok-orm) is the Vaadin-on-Kotlin ORM implementation; it's very easy to use with Vaadin, just read the
-[Accessing SQL Databases Guide](http://www.vaadinonkotlin.eu/databases.html). You'll need to use Kotlin to use vok-orm as it was intended to be used.
+* The recommended approach is to use [vok-orm](https://github.com/mvysny/vok-orm): it is the Vaadin-on-Kotlin ORM implementation; it's very easy to use with Vaadin, just read the
+[Accessing SQL Databases Guide](http://www.vaadinonkotlin.eu/databases.html). You'll need to use Kotlin to use vok-orm as it was intended to be used;
+  but there is also a Java example project [Vaadin 8 SQLDataProvider Example](https://github.com/mvysny/vaadin8-sqldataprovider-example).
 * [ActiveJDBC](http://javalite.io/activejdbc) is a Java-based JDBC akin to vok-orm which is very simple to use; the disadvantage is that it needs instrumentation
   and IDE plugin.
 
