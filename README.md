@@ -30,7 +30,7 @@ There are way simpler options than JPA; please check out the following:
 Workflow
 ========
 
-To compile the entire project, run `./mvnw -C clean package`.
+To compile the entire project, run `./mvnw -C clean package` (or on Windows: `./mvnw.cmd -C clean package`).
 
 To run the application, run `./mvnw jetty:run` and open http://localhost:8080/ .
 
