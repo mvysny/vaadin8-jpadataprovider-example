@@ -1,9 +1,8 @@
 package org.test;
 
-import com.github.vok.framework.DBKt;
-import com.github.vok.framework.JPAVOKPlugin;
-import com.github.vok.framework.VaadinOnKotlin;
-
+import eu.vaadinonkotlin.VaadinOnKotlin;
+import eu.vaadinonkotlin.vaadin8.jpa.DBKt;
+import eu.vaadinonkotlin.vaadin8.jpa.JPAVOKPlugin;
 import org.flywaydb.core.Flyway;
 
 import javax.servlet.ServletContextEvent;

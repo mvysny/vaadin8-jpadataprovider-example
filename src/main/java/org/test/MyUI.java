@@ -1,10 +1,5 @@
 package org.test;
 
-import com.github.vok.framework.DefaultFilterFieldFactory;
-import com.github.vok.framework.FilterRow;
-import com.github.vok.framework.JPAFilter;
-import com.github.vok.framework.vaadin.JPAFilterFactory;
-import com.github.vok.framework.vaadin.VaadinFiltersKt;
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.server.VaadinRequest;
@@ -15,6 +10,11 @@ import com.vaadin.ui.UI;
 
 import javax.servlet.annotation.WebServlet;
 
+import eu.vaadinonkotlin.vaadin8.DefaultFilterFieldFactory;
+import eu.vaadinonkotlin.vaadin8.FilterRow;
+import eu.vaadinonkotlin.vaadin8.jpa.JPAFilter;
+import eu.vaadinonkotlin.vaadin8.jpa.JPAFilterFactory;
+import eu.vaadinonkotlin.vaadin8.jpa.VaadinFiltersKt;
 import kotlin.jvm.internal.Reflection;
 import kotlin.reflect.KClass;
 

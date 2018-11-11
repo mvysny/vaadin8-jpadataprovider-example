@@ -1,11 +1,10 @@
 package org.test;
 
 
-import com.github.vok.framework.JPADataProvider;
-import com.github.vok.framework.JPADataProviderKt;
-import com.github.vok.framework.JPAFilter;
 import com.vaadin.data.provider.ConfigurableFilterDataProvider;
-
+import eu.vaadinonkotlin.vaadin8.jpa.JPADataProvider;
+import eu.vaadinonkotlin.vaadin8.jpa.JPADataProviderKt;
+import eu.vaadinonkotlin.vaadin8.jpa.JPAFilter;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.Serializable;
