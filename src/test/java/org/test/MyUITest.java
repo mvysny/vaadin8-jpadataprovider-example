@@ -4,6 +4,7 @@ import com.github.mvysny.kaributesting.v8.MockVaadin;
 import com.vaadin.ui.Grid;
 import org.junit.jupiter.api.*;
 
+import static com.github.mvysny.kaributesting.v8.GridKt.expectRow;
 import static com.github.mvysny.kaributesting.v8.GridKt.expectRows;
 import static com.github.mvysny.kaributesting.v8.LocatorJ._get;
 
@@ -36,5 +37,6 @@ public class MyUITest {
     public void testGridHas100Rows() {
         final Grid grid = _get(Grid.class);
         expectRows(grid, 100);
+        expectRow(grid, 0, "Person 0", "1", "10");
     }
 }
