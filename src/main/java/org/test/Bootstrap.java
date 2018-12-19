@@ -9,6 +9,8 @@ import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
+import static eu.vaadinonkotlin.vaadin8.jpa.DBKt.db;
+
 /**
  * Bootstraps the <a href="https://github.com/mvysny/vok-orm">Vok-ORM</a> which is used by the <code>SQLDataProvider</code> to access the database.
  * @author mavi
@@ -20,12 +22,13 @@ public class Bootstrap implements ServletContextListener {
         new JPAVOKPlugin().init();
 
         // create the 'Person' table
-        final Flyway flyway = new Flyway();
-        flyway.setDataSource(DBKt.getDataSource(VaadinOnKotlin.INSTANCE));
+        final Flyway flyway = Flyway.configure()
+                .dataSource(DBKt.getDataSource(VaadinOnKotlin.INSTANCE))
+                .load();
         flyway.migrate();
 
         // create some testing data
-        DBKt.db(ctx -> {
+        db(ctx -> {
             for (int i = 0; i < 100; i++) {
                 final Person person = new Person();
                 person.setName("Person " + i);
