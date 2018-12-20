@@ -62,7 +62,7 @@
 		<dependency>
 			<groupId>eu.vaadinonkotlin</groupId>
 			<artifactId>vok-framework-jpa</artifactId>
-			<version>0.6.2</version>
+			<version>0.6.3</version>
 		</dependency>
 		<dependency>
 			<groupId>com.h2database</groupId>
