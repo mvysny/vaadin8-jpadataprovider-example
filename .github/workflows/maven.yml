@@ -24,13 +24,6 @@ jobs:
         path: |
           ~/.m2/repository
         key: ${{ runner.os }}-gradle-${{ hashFiles('**/pom.xml', '.mvn/wrapper/maven-wrapper.properties') }}
-    - name: Cache pnpm packages
-      uses: actions/cache@v2
-      with:
-        path: |
-          ~/.vaadin
-          ~/.pnpm-store
-        key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml', '**/package.json') }}
     - name: Build with Gradle
       run: ./mvnw -C clean install -Pproduction
 
