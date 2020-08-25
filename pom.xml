@@ -14,14 +14,14 @@
 	</prerequisites>
 
 	<properties>
-		<vaadin.version>8.6.2</vaadin.version>
+		<vaadin.version>8.11.2</vaadin.version>
 		<vaadin.plugin.version>${vaadin.version}</vaadin.plugin.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<!-- If there are no local customizations, this can also be "fetch" or "cdn" -->
 		<vaadin.widgetset.mode>local</vaadin.widgetset.mode>
-		<junit.jupiter.version>5.3.0</junit.jupiter.version>
+		<junit.jupiter.version>5.6.0</junit.jupiter.version>
 	</properties>
 
 	<dependencyManagement>
@@ -67,7 +67,7 @@
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
-			<version>1.4.197</version>
+			<version>1.4.200</version>
 		</dependency>
 		<dependency>
 			<groupId>org.flywaydb</groupId>
